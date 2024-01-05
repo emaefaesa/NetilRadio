@@ -16,10 +16,10 @@ html {
     font-family: "FaktPro-Normal";
     src: url("https://db.onlinewebfonts.com/t/fdd40b399610a1e015242521427561b1.eot");
     src: url("https://db.onlinewebfonts.com/t/fdd40b399610a1e015242521427561b1.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/fdd40b399610a1e015242521427561b1.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/fdd40b399610a1e015242521427561b1.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/fdd40b399610a1e015242521427561b1.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/fdd40b399610a1e015242521427561b1.svg#FaktPro-Normal")format("svg");
+        url("https://db.onlinewebfonts.com/t/fdd40b399610a1e015242521427561b1.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/fdd40b399610a1e015242521427561b1.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/fdd40b399610a1e015242521427561b1.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/fdd40b399610a1e015242521427561b1.svg#FaktPro-Normal")format("svg");
 }
 
 
@@ -38,7 +38,7 @@ html {
 body {
     background-color: #007eff;
     color: #fff;
-    font-family: Fakt,sans-serif;
+    font-family: Fakt, sans-serif;
     font-weight: 400;
     margin: 0;
     display: block;
@@ -52,7 +52,7 @@ header {
 .narrow-width {
     font-size: 20px;
     color: #fff;
-    font-family: Fakt,sans-serif;
+    font-family: Fakt, sans-serif;
     box-sizing: border-box;
     position: relative;
     margin: 0 auto;
@@ -119,7 +119,7 @@ header {
 
 @media(min-width: 992px) {
     .main-menu {
-        display:block;
+        display: block;
         list-style-type: none;
         margin: 0;
         position: absolute;
@@ -213,20 +213,23 @@ a {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0 25px;
-    align-items: center;
-}
+        max-width: 540px;
+/*     align-items: center;
+ */}
 
- 
+
 .top-area {
     align-items: center;
-/*     display: block;
- */    margin-top: 50px;
-    min-height: 500px;
+    /*     display: block;s
+ */
+    margin-top: 50px;
+    min-height: 600px;
 }
 
 
 
-.schedule-current, .schedule-upcoming {
+.schedule-current,
+.schedule-upcoming {
     display: flex;
 }
 
@@ -240,7 +243,7 @@ a {
     .schedule-container {
         margin-left: 16px;
         transition: opacity .25s;
-    width: 100%;
+        width: 100%;
     }
 }
 
@@ -261,31 +264,20 @@ a {
     font-size: 0.8rem;
 }
 
-.schedule-time {  
+.schedule-time {
     left: 0;
     width: 100%;
     border: 0;
     font-size: .8em;
     margin-top: 10px;
-    
+
 }
 
 
 /*DOTS*/
 
-.dots-container {
-    display: flex;
-    justify-content: center
-}
-
-@media(min-width: 580px) {
-    .dots-container {
-        justify-content:space-between
-    }
-}
-
 .dots {
-    background-image: radial-gradient(transparent 30%,#fff calc(30% + .5px),#fff calc(30% + 1px),transparent calc(30% + 2px));
+    background-image: radial-gradient(transparent 30%, #fff calc(30% + .5px), #fff calc(30% + 1px), transparent calc(30% + 2px));
     background-position: -5px -5px;
     background-size: 22px 22px;
     content: "";
@@ -296,13 +288,27 @@ a {
 }
 
 
+.dots-container {
+    display: flex;
+    justify-content: center
+}
+
+@media(min-width: 580px) {
+    .dots-container {
+        justify-content: space-between
+        
+    }
+}
+ 
+
 .dots:first-child {
     display: block
 }
 
 @media(min-width: 580px) {
     .dots {
-        width:232px
+        width: 232px
+        
     }
 
     .dots:nth-child(2) {
@@ -312,10 +318,12 @@ a {
 
 @media(min-width: 992px) {
     .dots {
-        display:block;
+        display: block;
         margin-top: 55px
     }
 }
+
+
 
 /*RESIDENTS*/
 
@@ -331,10 +339,11 @@ a {
 }
 
 .residents-section-inner {
-    display: flex;
     padding-bottom: 4em;
     padding-top: 4em;
 }
+
+
 
 @media (min-width: 992px) {
     .narrow-width {
@@ -358,15 +367,15 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    margin: 0 0 2em;
 
     color: #fff;
-    font-family: Fakt,sans-serif;
+    font-family: Fakt, sans-serif;
     box-sizing: border-box;
     font-size: 1.2rem;
     width: 232px;
     margin: 0;
 }
-
 
 
 .residents-section-inner {
@@ -376,7 +385,7 @@ h3 {
 
 @media(min-width: 992px) {
     .residents-section-inner {
-        display:flex
+        display: flex
     }
 }
 
@@ -387,9 +396,13 @@ h3 {
 
 @media(min-width: 992px) {
     .residents-section-inner h3 {
-        margin:0
+        margin: 0
     }
 }
+
+
+/*RESIDENT LIST*/
+
 
 .residents-list {
     -webkit-font-smoothing: antialiased;
@@ -399,9 +412,35 @@ h3 {
     padding: 0
 }
 
+/* .residents-section {
+    border-top: 1px solid #fff
+}
+
+.residents-section-inner {
+    padding-bottom: 4em;
+    padding-top: 4em
+}
+
+@media(min-width: 992px) {
+    .residents-section-inner {
+        display: flex
+    }
+}
+
+.residents-section-inner h3 {
+    margin: 0 0 2em;
+    width: 232px
+}
+
+@media(min-width: 992px) {
+    .residents-section-inner h3 {
+        margin: 0
+    }
+} */
+
 @media(min-width: 580px) {
     .residents-list {
-        -webkit-column-count:2;
+        -webkit-column-count: 2;
         column-count: 2;
         -webkit-column-gap: 25px;
         column-gap: 25px
@@ -410,12 +449,20 @@ h3 {
 
 @media(min-width: 992px) {
     .residents-list {
-        -webkit-column-count:3;
+        -webkit-column-count: 3;
         column-count: 3;
         margin: 0 0 0 25px;
         width: calc(100% - 237px)
     }
 }
+
+
+@media(max-width: 580px) {
+    .residents-list {
+     font-size: 13px;
+    }
+}
+
 
 
 
@@ -425,41 +472,49 @@ h3 {
 
 .footer {
     border-top: 1px solid #fff;
-    padding: 100px 0
+    padding: 100px 0;
 }
 
 .footer a {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .footer-inner {
-    font-size: .8em
-
+    font-size: 16px;
 }
+
+@media(max-width: 580px) {
+    .footer-inner {
+     font-size: 13px;
+    }
+}
+
+
 
 @media(min-width: 992px) {
     .footer-inner {
-        display:flex;
-        flex-direction: row-reverse
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
 
 
 @media(min-width: 992px) {
-    .footer-inner .footer-logos,.footer-inner .text {
-        padding-left:10px;
-        width: 50%
+
+    .footer-inner .footer-logos,
+    .footer-inner .text {
+        padding-left: 10px;
+        width: 50%;
     }
 }
 
 .footer-inner .footer-logos {
-    padding-top: 2rem
-
+    padding-top: 2rem;
 }
 
 @media(min-width: 992px) {
     .footer-inner .footer-logos {
-        padding-top:0
+        padding-top: 0;
     }
 }
 
@@ -467,16 +522,16 @@ h3 {
     display: flex;
     list-style-type: none;
     margin-top: 74px;
-    padding: 0
+    padding: 0;
 }
 
 .footer-inner .social-media>li {
     align-items: center;
-    display: flex
+    display: flex;
 }
 
 .footer-inner .social-media>li~li {
-    margin-left: 1.75em
+    margin-left: 1.75em;
 }
 
 .footer-logos {
@@ -487,9 +542,16 @@ h3 {
 }
 
 .footer-logos li~li {
-    padding-left: 2rem
+    padding-left: 2rem;
 }
 
 .footer-logos img {
-    height: 4rem
+    height: 5rem;
 }
+
+@media(max-width: 580px) {
+    .footer-logos img {
+        height: 4rem;
+    }
+}
+
