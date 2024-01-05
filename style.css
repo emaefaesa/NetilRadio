@@ -23,14 +23,16 @@ html {
 }
 
 
-@font-face {
-    font-family: Fakt;
-    src: url(fonts/FaktPro-Normal.ttf) format("truetype")
-}
+
 
 @font-face {
     font-family: Fakt;
     src: url(fonts/FaktPro-Medium.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Fakt;
+    src: url(fonts/FaktPro-Normal.ttf) format("truetype")
 }
 
 body {
@@ -364,13 +366,13 @@ h3 {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
+    font-weight: 500;
     margin: 0 0 2em;
 
     color: #fff;
     font-family: Fakt, sans-serif;
     box-sizing: border-box;
-    font-size: 1.2rem;
+    font-size: 24px;
     width: 232px;
     margin: 0;
 }
@@ -390,6 +392,7 @@ h3 {
 .residents-section-inner h3 {
     margin: 0 0 2em;
     width: 232px
+    
 }
 
 @media(min-width: 992px) {
@@ -408,6 +411,9 @@ h3 {
     line-height: 1.4;
     list-style-type: none;
     padding: 0
+    
+    
+
 }
 
 /* .residents-section {
