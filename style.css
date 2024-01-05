@@ -14,7 +14,7 @@ html {
 
 @font-face {
     font-family: "FaktPro-Normal";
-    src: url("https://db.onlinewebfonts.com/t/fdd40b399610a1e015242521427561b1.eot");
+    src: url(fonts/FaktPro-Normal.ttf);
     src: url("https://db.onlinewebfonts.com/t/fdd40b399610a1e015242521427561b1.eot?#iefix")format("embedded-opentype"),
         url("https://db.onlinewebfonts.com/t/fdd40b399610a1e015242521427561b1.woff2")format("woff2"),
         url("https://db.onlinewebfonts.com/t/fdd40b399610a1e015242521427561b1.woff")format("woff"),
@@ -25,14 +25,12 @@ html {
 
 @font-face {
     font-family: Fakt;
-    font-weight: 400;
-    src: url(/fonts/FaktPro-Normal.woff) format("woff")
+    src: url(fonts/FaktPro-Normal.ttf) format("truetype")
 }
 
 @font-face {
     font-family: Fakt;
-    font-weight: 700;
-    src: url(/fonts/FaktPro-Medium.woff) format("woff")
+    src: url(fonts/FaktPro-Medium.ttf) format("truetype")
 }
 
 body {
